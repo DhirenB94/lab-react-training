@@ -17,3 +17,17 @@
   flex-direction: column;
   justify-content: center;
 }
+
+
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 200px 
+}
+
+.card{
+  width: 30%;
+  border-radius: 7%;
+  text-align: center;
+}
