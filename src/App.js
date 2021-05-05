@@ -109,11 +109,11 @@ function App() {
       <LikeButton />
       <LikeButton />
       
-      {/* <h1>ClickablePicture</h1>
+      <h1>ClickablePicture</h1>
       <ClickablePicture
-      img='/img/persons/maxence.png'
-      imgClicked='/img/persons/maxence-glasses.png'
-      /> */}
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
 
 
     </div>

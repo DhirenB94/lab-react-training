@@ -1,25 +1,32 @@
-// import React from 'react';
+import React from 'react';
 
-// class ClickablePicture extends React.Component {
+class ClickablePicture extends React.Component {
     
-//     function ClickablePic (props) {
-//         return(
-//             <div>
-//                 <img src={props.img}/>
-//                 <img srv={props.imgClicked}/>
-//             </div>
-//         )
-//     };
-    
-    
-    
-    
-//     state = {
-//         imageOne: ClickablePic(props.img)
-//     }
-// }
+    state = {
+        image: this.props.img,
+        clicked: false
+    }
+
+    addGlasses = () => {
+        
+        this.setState({
+            clicked: !this.state.clicked
+        })
+        
+    }
+
+    render() {
+        const {image, clicked} = this.state
+        return (
+            <div>
+               
+                <img onClick={this.addGlasses} src={!clicked ? this.props.img : this.props.imgClicked}/>
+            </div>
+        )
+    }
+}
 
 
 
 
-// export default ClickablePicture;
+export default ClickablePicture;
